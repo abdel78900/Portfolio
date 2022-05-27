@@ -12,29 +12,33 @@ const About = () => {
             <h2>About Me</h2>
             <div className="container about__container">
                 <div className="about__me">
-                    <img src={ME} alt="about image" />
+                    <div className="about__me-image">
+                        <img src={ME} alt="About image" />
+                    </div>
+                    
                 </div>
                 <div className="about__content">
                     <div className="about__cards">
                         <article className='about__card'>
-                            <FaAward/>
+                            <FaAward className='about__icon'/>
                             <h5>Experiences</h5>
                             <small>3+ Years Working</small>
                         </article>
                         <article className='about__card'>
-                            <FiUsers/>
+                            <FiUsers className='about__icon'/>
                             <h5>Clients</h5>
                             <small>200+ Worldwide</small>
                         </article>
                         <article className='about__card'>
-                            <VscFolderLibrary/>
+                            <VscFolderLibrary className='about__icon'/>
                             <h5>Projects</h5>
                             <small>80+ completed</small>
                         </article>
                     
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis ex eum officiis ratione ea tempora est impedit! A voluptatibus quis et commodi culpa eligendi sapiente totam. Consectetur, ducimus exercitationem.
+                    <p className='about__content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis ex eum officiis ratione ea tempora est impedit! A voluptatibus quis et commodi culpa eligendi sapiente totam. Consectetur, ducimus exercitationem.
                     Optio officiis ipsum aperiam, iste quasi alias inventore, dolor doloremque voluptatum voluptas facilis voluptatibus porro totam cupiditate cumque eveniet enim tenetur </p>
+                    <a href="#contact" className='btn btn-primary'>let's Talk</a>
                 </div>
             </div>
         </section>
