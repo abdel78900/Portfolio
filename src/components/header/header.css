@@ -11,6 +11,31 @@ header {
     position: relative;
 
 }
+.header__container::before{
+    content:'';
+    width: 500px;
+    height: 500px;
+    background: rgb(21, 195, 218);
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    filter: blur(150px);
+}
+.header__container::after{
+    content:'';
+    width: 500px;
+    height: 500px;
+    background: rgb(104, 9, 167);
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    filter: blur(150px);
+}
+
 
 /* CTA */
 .cta{
